@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنفولوجيكس - استشارات تقنية وتطوير لوجستي</title>
+    <meta name="description" content="InfoLogix for Technical Consulting and Logistics Development - خدمات استشارات وتطوير حلول لوجستية متقدمة">
+    <meta name="keywords" content="استشارات تقنية, تطوير لوجستي, منصة فارس, إدارة توصيل, حلول رقمية">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/style.css?v=20260124" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-cube me-2"></i>
+                <strong>إنفولوجيكس</strong>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">منتجاتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="nav-switcher">
+                    <button class="switch-btn theme-toggle" id="themeToggle" type="button" aria-label="تبديل النمط">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <a href="../en/index.html" class="switch-btn lang-toggle lang-btn" data-lang="en" aria-label="الانتقال إلى الإنجليزية">
+                        EN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-4">
+                            <span class="text-warning">إنفولوجيكس</span><br>
+                            للإستشارات التقنية والتطوير اللوجستي
+                        </h1>
+                        <p class="lead text-white-50 mb-4">
+                            شركة رائدة في الاستشارات التقنية وتطوير الحلول اللوجستية المتقدمة، مع تركيز خاص على قطاع توصيل الطعام. نقدم حلولاً مبتكرة تساعد الشركات على تحقيق التميز التشغيلي.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="services.html" class="btn btn-warning btn-lg">
+                                <i class="fas fa-rocket me-2"></i>
+                                استكشف خدماتنا
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-phone me-2"></i>
+                                تواصل معنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="insight">
+                        <img src="../images/insight.png" alt="إنفولوجيكس Solutions" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="../images/about-image.png" alt="About إنفولوجيكس" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <h2 class="display-5 fw-bold mb-4">من نحن</h2>
+                        <p class="lead mb-4">
+                            إنفولوجيكس هي شركة رائدة في تقديم الاستشارات التقنية والحلول الرقمية للقطاع اللوجستي. تأسست في عام 2026 ونركز بشكل خاص على قطاع توصيل الطعام.
+                        </p>
+                        <p class="mb-4">
+                            بفضل خبرتنا العميقة وفريقنا المتخصص، نقدم خدمات متكاملة تشمل الاستشارات، التطوير، التشغيل، والتدريب، بالإضافة إلى منتجات رقمية متقدمة مثل منصة فارس.
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="text-primary fw-bold">+50</h3>
+                                    <p>عميل سعيد</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="text-primary fw-bold">+8</h3>
+                                    <p>سنوات خبرة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-left me-2"></i>
+                            اعرف المزيد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">خدماتنا</h2>
+                <p class="lead">نقدم مجموعة شاملة من الخدمات المتخصصة للقطاع اللوجستي</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-laptop-code text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">استشارات وتطوير</h5>
+                        <p class="text-muted">استشارات تقنية متخصصة وتطوير حلول مخصصة لتحسين العمليات اللوجستية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">تحليل وتقييم</h5>
+                        <p class="text-muted">تحليل شامل للعمليات التشغيلية وتقييم الأداء لتحديد فرص التحسين</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-cogs text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">خدمات التشغيل</h5>
+                        <p class="text-muted">إدارة وتشغيل كامل للعمليات اللوجستية مع ضمان أعلى معايير الجودة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-graduation-cap text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">تدريب الإدارات التشغيلية</h5>
+                        <p class="text-muted">برامج تدريبية متخصصة لرفع كفاءة الإدارات التشغيلية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-car text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">برامج تدريبية للسائقين</h5>
+                        <p class="text-muted">تدريب شامل للسائقين على أفضل الممارسات والتقنيات الحديثة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-building text-primary fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">خدمات حكومية</h5>
+                        <p class="text-muted">تنسيق وتقديم خدمات حكومية متعددة للشركات اللوجستية</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-th-large me-2"></i>
+                    عرض جميع الخدمات
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">منتجاتنا الرقمية</h2>
+                <p class="lead">حلول مبتكرة مصممة خصيصاً للقطاع اللوجستي</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="../images/faris-platform.png" alt="منصة فارس" class="img-fluid rounded-4 shadow-lg image-zoom-effect">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="product-showcase">
+                        <h3 class="display-5 fw-bold mb-4">
+                            <i class="fas fa-truck-fast text-primary me-3"></i>
+                            منصة فارس
+                        </h3>
+                        <p class="text-muted mb-4">
+                            منصة فارس هي نظام متكامل لإدارة عمليات التوصيل والمبيعات، مصمم خصيصاً لشركات توصيل الطعام. تجمع بين الكفاءة العالية وسهولة الاستخدام.
+                        </p>
+                        <div class="features-list mb-4">
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>إدارة شاملة للمناديب والمركبات</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>تتبع مباشر للطلبات والتوصيلات</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>تطبيق جوال للمناديب والعملاء</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>تقارير وإحصائيات متقدمة</span>
+                            </div>
+                        </div>
+                        <a href="products.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>
+                            اعرف المزيد عن فارس
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">أرقامنا تتحدث عنا</h2>
+                <p class="lead">إنجازاتنا بالأرقام تعكس التزامنا بالتميز</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number">
+                            <span class="counter" data-target="500">0</span>+
+                        </div>
+                        <div class="stat-label">عميل سعيد</div>
+                        <div class="stat-desc">شركة تثق بخدماتنا</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-number">
+                            <span class="counter" data-target="10">0</span>+
+                        </div>
+                        <div class="stat-label">سنة خبرة</div>
+                        <div class="stat-desc">في القطاع اللوجستي</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number">
+                            <span class="counter" data-target="50">0</span>+
+                        </div>
+                        <div class="stat-label">خبير ومتخصص</div>
+                        <div class="stat-desc">في فريقنا</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-number">
+                            <span class="counter" data-target="95">0</span>%
+                        </div>
+                        <div class="stat-label">رضا العملاء</div>
+                        <div class="stat-desc">مقياس بواسطة عملائنا</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">آراء عملائنا</h2>
+                <p class="lead">ماذا يقول عملاؤنا عن التعاون معنا</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"إنفولوجيكس ساعدتنا في تحويل عملياتنا بالكامل. منصة فارس غيرت طريقة عملنا وزادت كفاءتنا بنسبة 40%."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>أحمد محمد</h6>
+                                <p class="text-muted mb-0">مدير عام - شركة توصيل سريع</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"فريق إنفولوجيكس محترف وملتزم. الاستشارات التي قدموها ساعدتنا في توفير أكثر من 30% من التكاليف التشغيلية."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>فهد Abdullah</h6>
+                                <p class="text-muted mb-0">المدير التنفيذي - شركة لوجستيات متقدمة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"برامج التدريب التي قدموها لفريقنا كانت ممتازة. لاحظنا تحسناً كبيراً في أداء مناديبنا ورضا العملاء."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>خالد سالم</h6>
+                                <p class="text-muted mb-0">مدير العمليات - شركة توصيل الطعام</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"منصة فارس كانت الحل المثالي لاحتياجاتنا. واجهة سهلة الاستخدام وإدارة فعالة للطلبات والمناديب."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>ناصر العتيبي</h6>
+                                <p class="text-muted mb-0">صاحب مطعم - مطاعم الأصالة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"الدعم الفني المتوفر على مدار الساعة جعل التعامل معهم تجربة ممتازة. دائماً ما يكونون متجاوبين وسريعين."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>عبدالله الرشيد</h6>
+                                <p class="text-muted mb-0">مدير التكنولوجيا - شركة التوصيل السريع</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"الحلول المخصصة التي قدموها لشركتنا كانت سبباً في زيادة إنتاجيتنا بنسبة 50%. ننصح بهم بشدة."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>سالم الدوسري</h6>
+                                <p class="text-muted mb-0">المدير المالي - شركة لوجستيات الخليج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">تواصل معنا</h2>
+                <p class="lead">نحن هنا لمساعدتك في تحقيق أهدافك</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">الاسم الكامل</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">رقم الهاتف</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="service" class="form-label">الخدمة المطلوبة</label>
+                                        <select class="form-select" id="service" required>
+                                            <option value="">اختر خدمة</option>
+                                            <option value="consulting">استشارات تقنية</option>
+                                            <option value="development">تطوير برمجيات</option>
+                                            <option value="faris">منصة فارس</option>
+                                            <option value="training">برامج تدريبية</option>
+                                            <option value="other">أخرى</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">الرسالة</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        إرسال الرسالة
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row footer-columns">
+                <div class="col-lg-4 mb-4 footer-company">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-cube me-2"></i>
+                        إنفولوجيكس
+                    </h4>
+                    <p class="text-white-50">
+                        شريكك الموثوق للاستشارات التقنية وتطوير الحلول اللوجستية المتقدمة.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 footer-links">
+                    <h5 class="fw-bold mb-3">روابط سريعة</h5>
+                    <div class="row g-2">
+                        <div class="col-6 col-md-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="privacy.html" class="text-white-50 text-decoration-none">سياسة الخصوصية</a></li>
+                                <li class="mb-2"><a href="terms.html" class="text-white-50 text-decoration-none">شروط الاستخدام</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">خدماتنا</a></li>
+                                <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">منتجاتنا</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">الرئيسية</a></li>
+                                <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">من نحن</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 footer-contact">
+                    <h5 class="fw-bold mb-3">معلومات التواصل</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <span class="phone-ltr">+966 58 177 3494</span>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@infologix.co
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-globe me-2"></i>
+                            www.infologix.co
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-white-50 mb-0 text-center">
+                        إنفولوجيكس © جميع الحقوق محفوظة 2026
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

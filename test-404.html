@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار صفحة 404</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-links {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .test-links h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        .test-links a {
+            display: block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            background: #e0e7ff;
+            color: #1e3a8a;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .test-links a:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateX(5px);
+        }
+        .note {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-links">
+        <h2>🧪 اختبار صفحة 404</h2>
+        <p>هذه الروابط يجب أن تعرض صفحة 404:</p>
+        
+        <a href="nonexistent-page.html">صفحة غير موجودة (الجذر)</a>
+        <a href="ar/nonexistent-page.html">صفحة غير موجودة (عربي)</a>
+        <a href="en/nonexistent-page.html">صفحة غير موجودة (إنجليزي)</a>
+        <a href="ar/services/nonexistent.html">صفحة غير موجودة (عربي - فرعي)</a>
+        <a href="en/about/nonexistent.html">صفحة غير موجودة (إنجليزي - فرعي)</a>
+        <a href="random/folder/page.html">مجلد وصفحة غير موجودين</a>
+        
+        <div class="note">
+            <strong>ملاحظة:</strong> كل رابط من هذه الروابط يجب أن يعرض صفحة 404 مصممة بشكل احترافي مع أنيميشن Lottie.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Language Detection and Redirection
+RewriteEngine On
+
+# Set default language to Arabic
+RewriteRule ^$ ar/index.html [L]
+
+# Check for language preference cookie
+RewriteCond %{HTTP_COOKIE} language=([^;]+)
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ %1/index.html [L]
+
+# Browser language detection (fallback)
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ en/index.html [L]
+
+# Direct language access
+RewriteRule ^ar/?$ ar/index.html [L]
+RewriteRule ^en/?$ en/index.html [L]
+
+# Set language cookie when accessing specific language
+RewriteCond %{REQUEST_URI} ^/ar/
+RewriteRule ^ - [CO=language:ar:.infologix.co:30:/]
+RewriteCond %{REQUEST_URI} ^/en/
+RewriteRule ^ - [CO=language:en:.infologix.co:30:/]
+
+# Fix language switcher links
+RewriteCond %{REQUEST_URI} ^/ar/
+RewriteRule ^index\.html$ ../index.html [L,R=302]
+RewriteCond %{REQUEST_URI} ^/en/
+RewriteRule ^index\.html$ ../index.html [L,R=302]

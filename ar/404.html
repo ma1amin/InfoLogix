@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة غير موجودة | InfoLogix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light only;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top, #f5f7ff 0%, #e0e7ff 50%, #f9fafb 100%);
+            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            color: #0f172a;
+        }
+
+        .page-wrapper {
+            width: min(430px, 92vw);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 24px;
+            padding: 32px 28px;
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+            backdrop-filter: blur(12px);
+        }
+
+        .animation-container {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 24px;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            margin: 0 0 12px;
+            font-weight: 700;
+            color: #1d4ed8;
+        }
+
+        p {
+            margin: 0 0 28px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #334155;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.28);
+        }
+
+        .btn-secondary {
+            background: #e0e7ff;
+            color: #1e3a8a;
+            box-shadow: 0 10px 20px rgba(148, 163, 184, 0.18);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 30px rgba(37, 99, 235, 0.25);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 18px 30px rgba(148, 163, 184, 0.25);
+        }
+
+        .tip {
+            margin-top: 18px;
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        @media (max-width: 480px) {
+            .page-wrapper {
+                padding: 28px 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .animation-container {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-wrapper" role="main" aria-labelledby="page-title">
+        <div class="animation-container" id="lottieContainer" aria-hidden="true"></div>
+        <h1 id="page-title">الصفحة غير موجودة</h1>
+        <p>عذراً، لم نتمكّن من العثور على الصفحة التي طلبتها. تأكّد من صحة الرابط أو استخدم الأزرار التالية للعودة إلى المسار الصحيح.</p>
+        <div class="actions">
+            <a href="index.html" class="btn btn-primary">
+                <span>العودة إلى الصفحة الرئيسية</span>
+            </a>
+            <a href="../en/index.html" class="btn btn-secondary">
+                <span>English Version</span>
+            </a>
+        </div>
+        <div class="tip">يمكنك أيضاً استخدام زر الرجوع في المتصفح للعودة إلى الصفحة السابقة.</div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var container = document.getElementById('lottieContainer');
+
+            if (!container || typeof lottie === 'undefined') {
+                return;
+            }
+
+            lottie.loadAnimation({
+                container: container,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '../assets/404.json',
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet'
+                }
+            });
+        });
+    </script>
+</body>
+</html>

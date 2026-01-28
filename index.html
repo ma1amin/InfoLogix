@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنفولوجيكس - استشارات تقنية وتطوير لوجستي</title>
+    <meta http-equiv="refresh" content="0; url=ar/index.html">
+    <script>
+        // Language detection and redirection
+        (function() {
+            // Check for language preference cookie
+            const cookies = document.cookie.split(';');
+            let languageCookie = null;
+            
+            for (let cookie of cookies) {
+                const [name, value] = cookie.trim().split('=');
+                if (name === 'language') {
+                    languageCookie = value;
+                    break;
+                }
+            }
+            
+            // Determine target language
+            let targetLanguage = 'ar'; // Default to Arabic
+            
+            if (languageCookie === 'en') {
+                targetLanguage = 'en';
+            } else if (!languageCookie && navigator.language && navigator.language.startsWith('en')) {
+                targetLanguage = 'en';
+            }
+            
+            // Redirect to appropriate language
+            const targetUrl = targetLanguage === 'en' ? 'en/index.html' : 'ar/index.html';
+            window.location.replace(targetUrl);
+        })();
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=ar/index.html">
+    </noscript>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif; direction: rtl;">
+        <h2>جاري التوجيه...</h2>
+        <p>إذا لم يتم توجيهك تلقائياً، <a href="ar/index.html">اضغط هنا</a> للنسخة العربية أو <a href="en/index.html">اضغط هنا</a> للنسخة الإنجليزية.</p>
+    </div>
+</body>
+</html>
